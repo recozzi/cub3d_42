@@ -1,6 +1,6 @@
 <h1>Cub3D</h1>
 <h2>Overview</h2>
-The goal of this project is utilize raycasting techniques to develop a graphical program that provides a "realistic" 3D graphical representation of the inside of a maze. implementing realistic rendering and dynamic environments. The program is designed to be a tribute to the historic game Wolfenstein 3D, the first-ever first-person shooter.
+The goal of this project is utilize raycasting techniques to develop a graphical program that provides a "realistic" 3D graphical representation of the inside of a maze, implementing realistic rendering and dynamic environments. The program is designed to be a tribute to the historic game Wolfenstein 3D, the first-ever first-person shooter.
 <h2>How To Use</h2>
 <ol>
   <li>Clone the repository:</li>
