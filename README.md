@@ -9,6 +9,7 @@ The goal of this project is utilize raycasting techniques to develop a graphical
   <pre><code>cd cub3d</code></pre>
   <li>Compile the project with Makefile rule:</li>
   <pre><code>make</code></pre>
+  <li>Make sure that you have all the dependencies needed for minilibx, if you are not sure, check <a href="https://harm-smits.github.io/42docs/libs/minilibx">here</a> on how to install them.</li>
   <li>Now you are ready to use cub3D</li>
   <p>Pass a map at your choice as arguments:</p>
   <pre><code>./cub3D maps/*</code></pre>
