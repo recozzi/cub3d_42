@@ -19,5 +19,5 @@ The goal of this project is utilize raycasting techniques to develop a graphical
 </ol>
 <h2>Info</h2>
 For more information about this project, please read the subject file <a href="https://github.com/recozzi/cub3d_42/blob/master/en.subject%20.pdf">here</a>.
-<h2>Licence</h2>
+<h2>License</h2>
 See <a href="https://github.com/recozzi/cub3d_42/blob/master/LICENSE">License</a>.
