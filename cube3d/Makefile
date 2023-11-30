@@ -52,11 +52,11 @@ OBJS		:=	$(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
 
 # COLORS ================================================================= #
 
-RED = \033[0;91m
-GREEN = \033[0;92m
-YELLOW = \033[0;93m
-CYAN = \033[0;96m
-WHITE = \033[0;97m
+RED		=	\033[0;91m
+GREEN	=	\033[0;92m
+YELLOW	=	\033[0;93m
+CYAN	=	\033[0;96m
+WHITE	=	\033[0;97m
 
 # ======================================================================== #
 
@@ -78,15 +78,15 @@ lib:
 	@make -C minilibx-linux
 
 clean:
-	@rm -rf $(OBJS)
+	@rm $(OBJS)
 	@make clean -C Libft
 	@make clean -C minilibx-linux
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed with $(WHITE)${RM} $(YELLOW)"
+	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
 
 fclean: clean
 	@rm -rf $(NAME) $(OBJS_DIR)
 	@make fclean -C Libft
-	@echo "$(RED)..and $(CYAN)${NAME} $(RED)as been removed"
+	@echo "$(RED)...And $(CYAN)${NAME} $(RED)as been removed."
 
 re:	fclean all
 

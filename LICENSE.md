@@ -1,15 +1,16 @@
+<pre>
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    LICENSE                                            :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: recozzi &lt;marvin@42.fr&gt;                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 17:43:36 by recozzi           #+#    #+#              #
 #    Updated: 2023/05/05 17:43:43 by recozzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
+</pre>
 This is a free work delivered for educational purposes during the main course at
 42 <42.fr>.
 
