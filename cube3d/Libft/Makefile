@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/18 21:39:59 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/18 21:40:00 by recozzi          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME		:=	libft.a
 
 CC			:=	gcc
@@ -96,7 +84,6 @@ OBJS 		:=	$(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
 RED		=	\033[0;91m
 GREEN	=	\033[0;92m
 YELLOW	=	\033[0;93m
-CYAN	=	\033[0;96m
 WHITE	=	\033[0;97m
 
 # ======================================================================== #
@@ -104,23 +91,18 @@ WHITE	=	\033[0;97m
 $(OBJS_DIR)%.o:	$(SRCS_DIR)%.c
 			@mkdir -p $(dir $@)
 			@$(CC) $(CFLAGS) -c $< -o $@
-			@echo "$(GREEN)Compiling:$(WHITE) $<"
+			@echo "$(GREEN)Compiling:$(WHITE) Libft/$<"
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(AR) $(NAME) $(OBJS)
-	@echo "$(YELLOW)- Program Name: $(WHITE)${NAME}"
-	@echo "$(YELLOW)- Compiler: $(WHITE)${CC}"
-	@echo "$(YELLOW)- Flags: $(WHITE)${CFLAGS}"
 
 clean:
 	@$(RM) $(OBJS)
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
 
 fclean:
 	@$(RM) $(NAME) $(OBJS) $(OBJS_DIR)
-	@echo "$(RED)...And $(CYAN)${NAME} $(RED)as been removed."
 
 re: fclean all
 

@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/18 21:37:02 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/18 21:37:04 by recozzi          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 .SILENT:
 
 MAKEFLAGS	+=	--silent
@@ -55,7 +43,6 @@ OBJS		:=	$(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
 RED		=	\033[0;91m
 GREEN	=	\033[0;92m
 YELLOW	=	\033[0;93m
-CYAN	=	\033[0;96m
 WHITE	=	\033[0;97m
 
 # ======================================================================== #
@@ -75,18 +62,15 @@ $(NAME): lib $(OBJS)
 
 lib:
 	@make -C Libft
-	@make -C minilibx-linux
 
 clean:
 	@rm $(OBJS)
 	@make clean -C Libft
-	@make clean -C minilibx-linux
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
+	@echo "$(RED)All object files removed.$(WHITE)"
 
 fclean: clean
 	@rm -rf $(NAME) $(OBJS_DIR)
 	@make fclean -C Libft
-	@echo "$(RED)...And $(CYAN)${NAME} $(RED)as been removed."
 
 re:	fclean all
 
